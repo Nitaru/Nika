@@ -1,91 +1,561 @@
-body{
-    margin: 0;
+@font-face {
+    font-family: font;
+    src: url(../font/AltoneTrial-Regular.ttf);
 }
 
-.navbar{
-    background-color: #331a55;
-    padding: 5px 0; 
-    .search{
-        border-bottom: 1px solid white;
-        border-radius: 0;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-        color: white;
-    }
-}
-.underline{
-    &::after{
+header{
+    position: relative;
+    background-image: url(https://media.wired.com/photos/5fb3f548d5373e2a748625dd/16:9/w_2400,h_1350,c_limit/Science_iceberg_160168939.jpg);
+    &::before{
+        position: absolute;
         content: "";
-        display: block;
-        background-color: #a8a8a885;
-        height: 1px;
-        position: relative;
-        top: 30px;
+        background-color: rgba(5, 5, 37, 0.521);
+        width: 100%;
+        height: 100%;
     }
-    .box{
-    box-shadow: 0 0 5px rgb(163, 163, 163);
-    text-align: center;
+    .container{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+    nav{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         a{
-        text-decoration: none;
-        color: white;
-        background-color: purple;
-        padding: 10px 15px;
+            h1{
+                color: white;
+            }
+            span{
+                color: goldenrod;
+            }
         }
-        .Download{
-        background-color: white;
-        border: 2px solid purple;
-        color: purple;
-        padding: 8px 15px;
-        }
-    }
-}
-.row{
-    margin-top: 60px;
-    img{
-        height: 200px;
-    }
-    p{
-        font-size: 13px;
-        color: grey;
-    }
-    a{
-        border: 0;
-        background-color: rgb(38, 155, 252);
-        font-size: 13px;
-        padding: 10px 20px;
-    }
-}
-footer{
-    background-color: #331a55;
-    color: white;
-    text-align: center;
-}
-@media (min-width: 1200px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 900px;   
-}
-}
-@media (max-width:700px){
-    .underline{
-        a{
-            margin-top: 10px;
+        li{
             display: inline-block;
+            a{
+                padding-left: 20px;
+                font-weight: 500;
+                color: white;
+                &:hover{
+                    color: goldenrod;
+                }
+            }
+        }
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
         }
     }
-    footer{
-        .row{
-            margin: 0;
+
+    .headerbottom{
+        margin: auto;
+        text-align: center;
+        color: white;
+        margin-top: 60px;
+
+        h3{
+            font-size: 25px;
         }
+
+        h1{
+            font-size: 50px;
+        }
+
+        p{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .headerbtn{
+            background-color: transparent;
+            border: 1px solid goldenrod;
+            color: goldenrod;
+        }
+
+        button{
+            padding: 13px 35px;
+            background-color: goldenrod;
+            border: 0;
+            transform: translateX(-10%);
+        }
+        }
+        h1{
+            text-align: center;
+             a{
+        display: inline-block;
+        color: white;
+             svg{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        }
+        }
+       
+       
     }
+}
+
+.container{
     .row{
-        .col-4{
-            width: 100%;
-            padding: 0 50px;
-            margin-bottom: 20px;
+        .upper{
+            .card{
+                text-align: center;
+                img{
+                    height: 80px;
+                    width: 70px;
+                    margin: auto;
+                }
+                .cardbottom{
+                    padding: 10px 0;    
+                    h3{
+                    color: rgb(107, 107, 107);
+                    }
+                    p{
+                    padding-top: 10px;
+                    color: grey;
+                    }
+                }
+                
+            }
         }
     }
 }
 
+.section1{
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+    .container{
+        .raghaca{
+            padding-top: 80px;
+            text-align: center;
+            color: #616060;
+        }
 
+        .esecraghaca{
+            text-align: center;
+            color: grey;
+            font-size: 25px;
+            margin-top: 25px;
 
+            &::after{
+                display: block;
+                content: "";
+                width: 50px;
+                height: 3px;
+                background-color: goldenrod;
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+
+        .sectionmid{
+            .row{
+                .card{
+                    background-color: whitesmoke;
+                    text-align: left;
+                    h2{
+                        color: grey;
+                        span{
+                            font-size: 70px;
+                            color: grey;
+                            font-weight: bold;
+                        }
+                    }
+                    p{
+                        padding-top: 10px;
+                        color: grey;
+                        font-size: 17px;
+                    }
+                    a{
+                        display: inline-block;
+                        color: goldenrod;
+                        text-decoration: none;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section2{
+    .container{
+        padding-bottom: 70px;
+        h1{
+            padding-top: 70px;
+            color: #616060;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p{
+            color: grey;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 15px;
+
+            &::after{
+                display: block;
+                content: "";
+                width: 50px;
+                height: 3px;
+                background-color: goldenrod;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .row{
+            .gallery{
+                .card{
+                    img{
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section3{
+    .pirveli{
+        background-image: url(https://free4kwallpapers.com/uploads/originals/2019/07/22/wide-minimalistic-landscape-wallpaper.jpg);
+        height: 400px;
+        position: relative;
+
+        img{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            border: 5px solid white;
+        }
+    }
+
+    .meore{
+        background-position: center;
+        background-image: url(https://cdn.wallpapersafari.com/71/5/ANst2W.jpg);
+        height: 400px;
+        position: relative;
+
+        img{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            border: 5px solid white;
+        }
+    }
+
+    .mesame{
+        background-position: center;
+        background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/22/433386-ultra-wide-space-space_art-748x316.jpg);
+        height: 400px;
+        position: relative;
+        background-size: cover;
+
+        img{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            border: 5px solid white;
+        }
+    }
+   
+}
+
+.section4{
+    .container{
+        .satauri{
+            color: rgb(92, 91, 91);
+            text-align: center;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 70px;
+        }
+
+        .teqsti{
+            color: grey;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 20px;
+
+            &::after{
+                display: block;
+                content: "";
+                width: 50px;
+                height: 3px;
+                background-color: goldenrod;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .row{
+            .seqcia4{
+                .card{
+                    border: 0;
+
+                    .cardtext{
+                        h2{
+                            margin-top: 20px;
+                            text-transform: capitalize;
+                            color: rgb(97, 96, 96);
+                            font-size: 27px;
+                        }
+                        h5{
+                            color: grey;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            color: grey;
+                        }
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: grey;
+                            font-size: 17px;
+                        }
+                    }
+
+                    margin-bottom: 70px;
+                }
+            }
+        }
+    }
+}
+
+.section5{
+    background-color: rgb(37, 46, 75);
+    padding-bottom: 35px;
+    .container{
+        h1{
+            padding-top: 90px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p{
+            padding-top: 10px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+
+            &::after{
+                display: block;
+                content: "";
+                width: 50px;
+                height: 3px;
+                background-color: white;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+        }
+        .saregistracio{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .info{
+                padding-bottom: 120px;
+                width: 50%;
+                h3{
+                    color: white;
+                    font-size: 20px;
+                }
+                .location{
+                    padding-left: 35px;
+                }
+                span{
+                    display: block;
+                }
+                .envelope{
+                    padding-top: 20px;
+                }
+                .phone{
+                    padding-top: 20px;
+                }
+                svg{
+                    color: goldenrod;
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                }
+                .telefoni{
+                    position: relative;
+                    top: 35px;
+                }
+            }
+
+            .loginmxare{
+                width: 50%;
+                .row{
+                    #saxeli{
+                        width: 100%;
+                        background-color: transparent;
+                        border: 1px solid goldenrod;
+                        padding: 5px 0 5px 10px;
+                        }
+                        
+                    
+                    #mail{
+                        width: 100%;
+                        background-color: transparent;
+                        border: 1px solid goldenrod;
+                        padding: 5px 0 5px 10px;
+                    }
+                    #subject{
+                        width: 100%;
+                        background-color: transparent;
+                        border: 1px solid goldenrod;
+                        margin-top: 20px;
+                        padding: 5px 0 5px 10px;
+                    }
+                    
+                    #diditexti{
+                        width: 100%;
+                        background-color: transparent;
+                        border: 1px solid goldenrod;
+                        margin-top: 20px;
+                        padding-left: 10px;
+                        padding-bottom: 80px;
+                    }
+
+                    button{
+                        margin-top: 15px;
+                        border-radius: 20px;
+                        padding: 5px 30px;
+                        background: transparent;
+                        border: 1px solid goldenrod;
+                        color: goldenrod;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .container{
+        text-align: center;
+        font-size: 20px;
+        color: grey;
+        h3{
+            display: block;
+            font-family: font;
+            font-size: 20px;
+        }
+        .zeda{
+            padding-top: 20px;
+        }
+        .qveda{
+            padding-bottom: 20px;
+        }
+        span{
+            color: goldenrod;
+        }
+    }
+}
+@media (max-width:580px){
+  header{
+    .container{
+      nav{
+        padding: 20px 0;
+        border-bottom: 2px solid goldenrod;
+        ul{
+          display: none;
+        }
+        .raime{
+          margin: auto;
+          text-align: center;
+        }
+      }
+      .headerbottom{
+        margin-top: 30px;
+        button{
+          margin: 0;
+          transform: translateX(0);
+        }
+      }      
+    }
+  }
+  .container{
+    .sectionstart{
+      .row{
+        .upper{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .section1{
+    .container{
+      .sectionmid{
+        .row{
+          .midder{
+            width: 100%;
+            .card{
+               text-align: center;
+            }
+           
+          }
+        }
+      }
+    }
+  }
+  .section2{
+    .container{
+      .row{
+        .gallery{
+          width: 100%;
+          padding: 10px 40px;
+        }
+      }
+    }
+  }
+  .section4{
+    .container{
+      .row{
+        .seqcia4{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .section5{
+    .container{
+      .saregistracio{
+        .info{
+          width: 100%;
+          text-align: center;
+          .telefoni{
+            right: 80px;
+          }
+        }
+        .loginmxare{
+          width: 100%;
+          .row{
+            .push{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

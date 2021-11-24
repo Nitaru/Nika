@@ -1,80 +1,455 @@
-body {
-  margin: 0;
+@font-face {
+  font-family: font;
+  src: url(../font/AltoneTrial-Regular.ttf);
 }
-.navbar {
-  background-color: #331a55;
-  padding: 5px 0;
-}
-.navbar .search {
-  border-bottom: 1px solid white;
-  border-radius: 0;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  color: white;
-}
-.underline::after {
-  content: "";
-  display: block;
-  background-color: #a8a8a885;
-  height: 1px;
+header {
   position: relative;
-  top: 30px;
+  background-image: url(https://media.wired.com/photos/5fb3f548d5373e2a748625dd/16:9/w_2400,h_1350,c_limit/Science_iceberg_160168939.jpg);
 }
-.underline .box {
-  box-shadow: 0 0 5px #a3a3a3;
-  text-align: center;
+header::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(5, 5, 37, 0.521);
+  width: 100%;
+  height: 100%;
 }
-.underline .box a {
-  text-decoration: none;
+header .container {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  max-width: 100%;
+}
+header .container nav {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav a h1 {
   color: white;
-  background-color: purple;
-  padding: 10px 15px;
 }
-.underline .box .Download {
-  background-color: white;
-  border: 2px solid purple;
-  color: purple;
-  padding: 8px 15px;
+header .container nav a span {
+  color: goldenrod;
 }
-.row {
+header .container nav li {
+  display: inline-block;
+}
+header .container nav li a {
+  padding-left: 20px;
+  font-weight: 500;
+  color: white;
+}
+header .container nav li a:hover {
+  color: goldenrod;
+}
+header .container nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .container .headerbottom {
+  margin: auto;
+  text-align: center;
+  color: white;
   margin-top: 60px;
 }
-.row img {
-  height: 200px;
+header .container .headerbottom h3 {
+  font-size: 25px;
 }
-.row p {
-  font-size: 13px;
-  color: grey;
+header .container .headerbottom h1 {
+  font-size: 50px;
 }
-.row a {
+header .container .headerbottom p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+header .container .headerbottom .headerbtn {
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  color: goldenrod;
+}
+header .container .headerbottom button {
+  padding: 13px 35px;
+  background-color: goldenrod;
   border: 0;
-  background-color: #269bfc;
-  font-size: 13px;
-  padding: 10px 20px;
+  transform: translateX(-10%);
 }
-footer {
-  background-color: #331a55;
-  color: white;
+header .container h1 {
   text-align: center;
 }
-@media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 900px;
-  }
+header .container h1 a {
+  display: inline-block;
+  color: white;
 }
-@media (max-width: 700px) {
-  .underline a {
-    margin-top: 10px;
-    display: inline-block;
+header .container h1 a svg {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.container .row .upper .card {
+  text-align: center;
+}
+.container .row .upper .card img {
+  height: 80px;
+  width: 70px;
+  margin: auto;
+}
+.container .row .upper .card .cardbottom {
+  padding: 10px 0;
+}
+.container .row .upper .card .cardbottom h3 {
+  color: #6b6b6b;
+}
+.container .row .upper .card .cardbottom p {
+  padding-top: 10px;
+  color: grey;
+}
+
+.section1 {
+  padding-bottom: 50px;
+  background-color: whitesmoke;
+}
+.section1 .container .raghaca {
+  padding-top: 80px;
+  text-align: center;
+  color: #616060;
+}
+.section1 .container .esecraghaca {
+  text-align: center;
+  color: grey;
+  font-size: 25px;
+  margin-top: 25px;
+}
+.section1 .container .esecraghaca::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: goldenrod;
+  margin: auto;
+  margin-top: 30px;
+}
+.section1 .container .sectionmid .row .card {
+  background-color: whitesmoke;
+  text-align: left;
+}
+.section1 .container .sectionmid .row .card h2 {
+  color: grey;
+}
+.section1 .container .sectionmid .row .card h2 span {
+  font-size: 70px;
+  color: grey;
+  font-weight: bold;
+}
+.section1 .container .sectionmid .row .card p {
+  padding-top: 10px;
+  color: grey;
+  font-size: 17px;
+}
+.section1 .container .sectionmid .row .card a {
+  display: inline-block;
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.section2 .container {
+  padding-bottom: 70px;
+}
+.section2 .container h1 {
+  padding-top: 70px;
+  color: #616060;
+  text-align: center;
+  font-weight: bold;
+}
+.section2 .container p {
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 15px;
+}
+.section2 .container p::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: goldenrod;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.section2 .container .row .gallery .card img {
+  width: 100%;
+  height: 200px;
+}
+
+.section3 .pirveli {
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2019/07/22/wide-minimalistic-landscape-wallpaper.jpg);
+  height: 400px;
+  position: relative;
+}
+.section3 .pirveli img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  border: 5px solid white;
+}
+.section3 .meore {
+  background-position: center;
+  background-image: url(https://cdn.wallpapersafari.com/71/5/ANst2W.jpg);
+  height: 400px;
+  position: relative;
+}
+.section3 .meore img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  border: 5px solid white;
+}
+.section3 .mesame {
+  background-position: center;
+  background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/22/433386-ultra-wide-space-space_art-748x316.jpg);
+  height: 400px;
+  position: relative;
+  background-size: cover;
+}
+.section3 .mesame img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  border: 5px solid white;
+}
+
+.section4 .container .satauri {
+  color: #5c5b5b;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.section4 .container .teqsti {
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+}
+.section4 .container .teqsti::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: goldenrod;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.section4 .container .row .seqcia4 .card {
+  border: 0;
+  margin-bottom: 70px;
+}
+.section4 .container .row .seqcia4 .card .cardtext h2 {
+  margin-top: 20px;
+  text-transform: capitalize;
+  color: #616060;
+  font-size: 27px;
+}
+.section4 .container .row .seqcia4 .card .cardtext h5 {
+  color: grey;
+  margin-bottom: 20px;
+}
+.section4 .container .row .seqcia4 .card .cardtext p {
+  color: grey;
+}
+.section4 .container .row .seqcia4 .card .cardtext a {
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+  font-size: 17px;
+}
+
+.section5 {
+  background-color: #252e4b;
+  padding-bottom: 35px;
+}
+.section5 .container h1 {
+  padding-top: 90px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.section5 .container p {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.section5 .container p::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.section5 .container .saregistracio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section5 .container .saregistracio .info {
+  padding-bottom: 120px;
+  width: 50%;
+}
+.section5 .container .saregistracio .info h3 {
+  color: white;
+  font-size: 20px;
+}
+.section5 .container .saregistracio .info .location {
+  padding-left: 35px;
+}
+.section5 .container .saregistracio .info span {
+  display: block;
+}
+.section5 .container .saregistracio .info .envelope {
+  padding-top: 20px;
+}
+.section5 .container .saregistracio .info .phone {
+  padding-top: 20px;
+}
+.section5 .container .saregistracio .info svg {
+  color: goldenrod;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.section5 .container .saregistracio .info .telefoni {
+  position: relative;
+  top: 35px;
+}
+.section5 .container .saregistracio .loginmxare {
+  width: 50%;
+}
+.section5 .container .saregistracio .loginmxare .row #saxeli {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  padding: 5px 0 5px 10px;
+}
+.section5 .container .saregistracio .loginmxare .row #mail {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  padding: 5px 0 5px 10px;
+}
+.section5 .container .saregistracio .loginmxare .row #subject {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  margin-top: 20px;
+  padding: 5px 0 5px 10px;
+}
+.section5 .container .saregistracio .loginmxare .row #diditexti {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid goldenrod;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 80px;
+}
+.section5 .container .saregistracio .loginmxare .row button {
+  margin-top: 15px;
+  border-radius: 20px;
+  padding: 5px 30px;
+  background: transparent;
+  border: 1px solid goldenrod;
+  color: goldenrod;
+}
+
+footer .container {
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+}
+footer .container h3 {
+  display: block;
+  font-family: font;
+  font-size: 20px;
+}
+footer .container .zeda {
+  padding-top: 20px;
+}
+footer .container .qveda {
+  padding-bottom: 20px;
+}
+footer .container span {
+  color: goldenrod;
+}
+
+@media (max-width: 580px) {
+  header .container nav {
+    padding: 20px 0;
+    border-bottom: 2px solid goldenrod;
   }
-  footer .row {
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav .raime {
+    margin: auto;
+    text-align: center;
+  }
+  header .container .headerbottom {
+    margin-top: 30px;
+  }
+  header .container .headerbottom button {
     margin: 0;
+    transform: translateX(0);
   }
-  .row .col-4 {
+
+  .container .sectionstart .row .upper {
     width: 100%;
-    padding: 0 50px;
-    margin-bottom: 20px;
+  }
+
+  .section1 .container .sectionmid .row .midder {
+    width: 100%;
+  }
+  .section1 .container .sectionmid .row .midder .card {
+    text-align: center;
+  }
+
+  .section2 .container .row .gallery {
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+  .section4 .container .row .seqcia4 {
+    width: 100%;
+  }
+
+  .section5 .container .saregistracio .info {
+    width: 100%;
+    text-align: center;
+  }
+  .section5 .container .saregistracio .info .telefoni {
+    right: 80px;
+  }
+  .section5 .container .saregistracio .loginmxare {
+    width: 100%;
+  }
+  .section5 .container .saregistracio .loginmxare .row .push {
+    text-align: center;
   }
 }
 
