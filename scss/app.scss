@@ -56,7 +56,6 @@ header{
             padding-bottom: 30px;
             font-size: 91px;
             letter-spacing: 5px;
-            line-height: 32px;
             color: #ffffff;
             font-weight: 700;
             font-family: bebas;
@@ -66,7 +65,6 @@ header{
             max-width: 850px;
             height: 72px;
             font-size: 24px;
-            line-height: 42px;
             color: #bbd8ff;
             font-weight: 400;
             font-family: openReg;
@@ -97,15 +95,13 @@ header{
     }
 }
 .second{
-    position: relative;
-    img{
-        position: relative;
-        top: 660px; 
-        left: 55px;
-    }
     .container{
+        background-image: url('../images/Macbook.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
         margin-top: 570px;
-        .col-8{
+        .col-xl-7{
             position: relative;
            h1{
         font-size: 72px;
@@ -153,10 +149,8 @@ header{
             border-radius: 28px;
         } 
         }
-        .col-4{
-            position: absolute;
-            top: 70px;
-            left: 524px;
+        .mcbook{
+            display: none;
         }
     }  
 }
@@ -170,34 +164,8 @@ section{
             .p-50px{
                 padding-top: 50px;
             }
-            .col-4{
+            .col-lg-4{
                 .shida{
-                    .col-3{
-                        padding-top: 6px;
-                    }
-                    .poto{
-                        padding-top: 7px;
-                        padding-left: 31px;
-                    }
-                    .faili{
-                        padding-top: 7px;
-                        padding-left: 27px;
-                    }
-                    .telefoni{
-                        padding-top: 7px;
-                        padding-left: 23px;
-                    }
-                    .telefonitext{
-                        padding-left: 0;
-                    }
-                    .joxi{
-                        padding-top: 7px;
-                        padding-left: 32px;
-                    }
-                    .bolo{
-                        padding-top: 6px;
-                        padding-left: 24px;
-                    }
                     .col-9{
                         align-items: center;
                         padding-left: 8px;
@@ -239,5 +207,40 @@ section{
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1139px;
 }
+}
 
+@media (max-width:1200px){
+    .second{
+        .container{
+               background-image: none;
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .second{
+        .container{
+            .mcbook{
+                display: inline-block;
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px){
+    section{
+        .container{
+            .row{
+                .col-lg-4{
+                    &:nth-child(3){
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
+    }
 }

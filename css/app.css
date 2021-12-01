@@ -46,7 +46,6 @@ header .home h1 {
   padding-bottom: 30px;
   font-size: 91px;
   letter-spacing: 5px;
-  line-height: 32px;
   color: #ffffff;
   font-weight: 700;
   font-family: bebas;
@@ -56,7 +55,6 @@ header .home p {
   max-width: 850px;
   height: 72px;
   font-size: 24px;
-  line-height: 42px;
   color: #bbd8ff;
   font-weight: 400;
   font-family: openReg;
@@ -85,21 +83,17 @@ header .home .download a {
   color: white;
 }
 
-.second {
-  position: relative;
-}
-.second img {
-  position: relative;
-  top: 660px;
-  left: 55px;
-}
 .second .container {
+  background-image: url("../images/Macbook.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
   margin-top: 570px;
 }
-.second .container .col-8 {
+.second .container .col-xl-7 {
   position: relative;
 }
-.second .container .col-8 h1 {
+.second .container .col-xl-7 h1 {
   font-size: 72px;
   line-height: 32px;
   color: #25365d;
@@ -109,7 +103,7 @@ header .home .download a {
   position: relative;
   text-align: left;
 }
-.second .container .col-8 p {
+.second .container .col-xl-7 p {
   font-size: 16px;
   line-height: 32px;
   color: #5a5a5a;
@@ -117,7 +111,7 @@ header .home .download a {
   font-family: openReg;
   padding-top: 55px;
 }
-.second .container .col-8 h5 {
+.second .container .col-xl-7 h5 {
   padding-top: 0;
   font-size: 16px;
   line-height: 32px;
@@ -125,13 +119,13 @@ header .home .download a {
   font-weight: 400;
   font-family: openReg;
 }
-.second .container .col-8 h5 svg {
+.second .container .col-xl-7 h5 svg {
   color: #ff2767;
   display: inline-block;
   width: 15px;
   height: 15px;
 }
-.second .container .col-8 a {
+.second .container .col-xl-7 a {
   margin-top: 51px;
   font-size: 18px;
   font-family: openBold;
@@ -143,10 +137,8 @@ header .home .download a {
   padding: 12px 58px 15px 64px;
   border-radius: 28px;
 }
-.second .container .col-4 {
-  position: absolute;
-  top: 70px;
-  left: 524px;
+.second .container .mcbook {
+  display: none;
 }
 
 section {
@@ -160,37 +152,11 @@ section .container .gare {
 section .container .gare .p-50px {
   padding-top: 50px;
 }
-section .container .gare .col-4 .shida .col-3 {
-  padding-top: 6px;
-}
-section .container .gare .col-4 .shida .poto {
-  padding-top: 7px;
-  padding-left: 31px;
-}
-section .container .gare .col-4 .shida .faili {
-  padding-top: 7px;
-  padding-left: 27px;
-}
-section .container .gare .col-4 .shida .telefoni {
-  padding-top: 7px;
-  padding-left: 23px;
-}
-section .container .gare .col-4 .shida .telefonitext {
-  padding-left: 0;
-}
-section .container .gare .col-4 .shida .joxi {
-  padding-top: 7px;
-  padding-left: 32px;
-}
-section .container .gare .col-4 .shida .bolo {
-  padding-top: 6px;
-  padding-left: 24px;
-}
-section .container .gare .col-4 .shida .col-9 {
+section .container .gare .col-lg-4 .shida .col-9 {
   align-items: center;
   padding-left: 8px;
 }
-section .container .gare .col-4 .shida .col-9 h1 {
+section .container .gare .col-lg-4 .shida .col-9 h1 {
   text-align: left;
   font-size: 22px;
   letter-spacing: 1px;
@@ -199,7 +165,7 @@ section .container .gare .col-4 .shida .col-9 h1 {
   font-weight: 600;
   font-family: openReg;
 }
-section .container .gare .col-4 .shida .col-9 p {
+section .container .gare .col-lg-4 .shida .col-9 p {
   padding-top: 6px;
   font-size: 16px;
   letter-spacing: 0px;
@@ -212,6 +178,25 @@ section .container .gare .col-4 .shida .col-9 p {
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1139px;
+  }
+}
+@media (max-width: 1200px) {
+  .second .container {
+    background-image: none;
+  }
+}
+@media (max-width: 1200px) {
+  .second .container .mcbook {
+    display: inline-block;
+  }
+  .second .container .mcbook img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media (max-width: 991px) {
+  section .container .row .col-lg-4:nth-child(3) {
+    padding-top: 50px;
   }
 }
 
