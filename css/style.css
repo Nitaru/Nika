@@ -183,11 +183,7 @@ footer {
     width: 100%;
     display: block;
   }
-  .sub-nav .container .row .part2 {
-    display: flex;
-    justify-content: space-between;
-  }
-  .sub-nav .container .row .part2 a {
+  .sub-nav .container .row .part2 text a {
     text-align: center;
   }
 

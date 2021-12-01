@@ -1,455 +1,217 @@
+@charset "UTF-8";
+body {
+  background-image: url(../images/Tło.png);
+}
+
 @font-face {
-  font-family: font;
-  src: url(../font/AltoneTrial-Regular.ttf);
+  font-family: bebasBold;
+  src: url(../font/BebasNeue\ Bold.ttf);
 }
-header {
-  position: relative;
-  background-image: url(https://media.wired.com/photos/5fb3f548d5373e2a748625dd/16:9/w_2400,h_1350,c_limit/Science_iceberg_160168939.jpg);
+@font-face {
+  font-family: bebas;
+  src: url(../font/BebasNeue-Regular.ttf);
 }
-header::before {
-  position: absolute;
-  content: "";
-  background-color: rgba(5, 5, 37, 0.521);
-  width: 100%;
-  height: 100%;
+@font-face {
+  font-family: openReg;
+  src: url(../font/OpenSans-Regular.ttf);
 }
-header .container {
-  position: relative;
-  width: 1200px;
-  margin: auto;
-  max-width: 100%;
+@font-face {
+  font-family: openBold;
+  src: url(../font/OpenSans-Bold.ttf);
 }
-header .container nav {
-  padding-top: 40px;
+header nav .container .row {
+  padding-top: 29px;
+}
+header nav .container .row .col-8 .gamadidebeli {
+  padding-left: 25px;
+}
+header nav .container .row .col-8 a {
+  padding-top: 1px;
+  padding-left: 19px;
+  font-size: 18px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-header .container nav a h1 {
-  color: white;
-}
-header .container nav a span {
-  color: goldenrod;
-}
-header .container nav li {
   display: inline-block;
-}
-header .container nav li a {
-  padding-left: 20px;
-  font-weight: 500;
   color: white;
-}
-header .container nav li a:hover {
-  color: goldenrod;
-}
-header .container nav a {
-  text-transform: uppercase;
   text-decoration: none;
+  font-family: openBold;
 }
-header .container .headerbottom {
+header .home {
+  padding-left: 1.5px;
+  padding-top: 203px;
   margin: auto;
   text-align: center;
-  color: white;
-  margin-top: 60px;
 }
-header .container .headerbottom h3 {
-  font-size: 25px;
+header .home h1 {
+  padding-bottom: 30px;
+  font-size: 91px;
+  letter-spacing: 5px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: bebas;
 }
-header .container .headerbottom h1 {
-  font-size: 50px;
-}
-header .container .headerbottom p {
-  font-size: 20px;
-  margin-top: 30px;
-}
-header .container .headerbottom .headerbtn {
-  background-color: transparent;
-  border: 1px solid goldenrod;
-  color: goldenrod;
-}
-header .container .headerbottom button {
-  padding: 13px 35px;
-  background-color: goldenrod;
-  border: 0;
-  transform: translateX(-10%);
-}
-header .container h1 {
+header .home p {
+  margin: auto;
+  max-width: 850px;
+  height: 72px;
+  font-size: 24px;
+  line-height: 42px;
+  color: #bbd8ff;
+  font-weight: 400;
+  font-family: openReg;
   text-align: center;
 }
-header .container h1 a {
+header .home .download {
+  margin-top: 67px;
+  border-radius: 28px;
   display: inline-block;
-  color: white;
+  background-color: #25365d;
 }
-header .container h1 a svg {
-  margin-top: 50px;
-  margin-bottom: 30px;
+header .home .download .icon1 {
+  padding-left: 39px;
+}
+header .home .download .w-55 {
+  padding-right: 55px;
+  padding-left: 13px;
+}
+header .home .download a {
+  font-size: 18px;
+  font-family: openBold;
+  padding-bottom: 15px;
+  padding-top: 13px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  text-decoration: none;
+  color: white;
 }
 
-.container .row .upper .card {
+.second {
+  position: relative;
+}
+.second img {
+  position: relative;
+  top: 660px;
+  left: 55px;
+}
+.second .container {
+  margin-top: 570px;
+}
+.second .container .col-8 {
+  position: relative;
+}
+.second .container .col-8 h1 {
+  font-size: 72px;
+  line-height: 32px;
+  color: #25365d;
+  font-weight: 700;
+  font-family: bebasBold;
   text-align: center;
-}
-.container .row .upper .card img {
-  height: 80px;
-  width: 70px;
-  margin: auto;
-}
-.container .row .upper .card .cardbottom {
-  padding: 10px 0;
-}
-.container .row .upper .card .cardbottom h3 {
-  color: #6b6b6b;
-}
-.container .row .upper .card .cardbottom p {
-  padding-top: 10px;
-  color: grey;
-}
-
-.section1 {
-  padding-bottom: 50px;
-  background-color: whitesmoke;
-}
-.section1 .container .raghaca {
-  padding-top: 80px;
-  text-align: center;
-  color: #616060;
-}
-.section1 .container .esecraghaca {
-  text-align: center;
-  color: grey;
-  font-size: 25px;
-  margin-top: 25px;
-}
-.section1 .container .esecraghaca::after {
-  display: block;
-  content: "";
-  width: 50px;
-  height: 3px;
-  background-color: goldenrod;
-  margin: auto;
-  margin-top: 30px;
-}
-.section1 .container .sectionmid .row .card {
-  background-color: whitesmoke;
+  position: relative;
   text-align: left;
 }
-.section1 .container .sectionmid .row .card h2 {
-  color: grey;
+.second .container .col-8 p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #5a5a5a;
+  font-weight: 400;
+  font-family: openReg;
+  padding-top: 55px;
 }
-.section1 .container .sectionmid .row .card h2 span {
-  font-size: 70px;
-  color: grey;
-  font-weight: bold;
+.second .container .col-8 h5 {
+  padding-top: 0;
+  font-size: 16px;
+  line-height: 32px;
+  color: #5a5a5a;
+  font-weight: 400;
+  font-family: openReg;
 }
-.section1 .container .sectionmid .row .card p {
-  padding-top: 10px;
-  color: grey;
-  font-size: 17px;
-}
-.section1 .container .sectionmid .row .card a {
+.second .container .col-8 h5 svg {
+  color: #ff2767;
   display: inline-block;
-  color: goldenrod;
-  text-decoration: none;
-  font-size: 20px;
+  width: 15px;
+  height: 15px;
 }
-
-.section2 .container {
-  padding-bottom: 70px;
-}
-.section2 .container h1 {
-  padding-top: 70px;
-  color: #616060;
-  text-align: center;
-  font-weight: bold;
-}
-.section2 .container p {
-  color: grey;
-  font-size: 25px;
-  text-align: center;
-  padding-top: 15px;
-}
-.section2 .container p::after {
-  display: block;
-  content: "";
-  width: 50px;
-  height: 3px;
-  background-color: goldenrod;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-.section2 .container .row .gallery .card img {
-  width: 100%;
-  height: 200px;
-}
-
-.section3 .pirveli {
-  background-image: url(https://free4kwallpapers.com/uploads/originals/2019/07/22/wide-minimalistic-landscape-wallpaper.jpg);
-  height: 400px;
-  position: relative;
-}
-.section3 .pirveli img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100px;
-  border: 5px solid white;
-}
-.section3 .meore {
-  background-position: center;
-  background-image: url(https://cdn.wallpapersafari.com/71/5/ANst2W.jpg);
-  height: 400px;
-  position: relative;
-}
-.section3 .meore img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100px;
-  border: 5px solid white;
-}
-.section3 .mesame {
-  background-position: center;
-  background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/22/433386-ultra-wide-space-space_art-748x316.jpg);
-  height: 400px;
-  position: relative;
-  background-size: cover;
-}
-.section3 .mesame img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100px;
-  border: 5px solid white;
-}
-
-.section4 .container .satauri {
-  color: #5c5b5b;
-  text-align: center;
-  font-size: 45px;
-  font-weight: bold;
-  margin-top: 70px;
-}
-.section4 .container .teqsti {
-  color: grey;
-  font-size: 25px;
-  text-align: center;
-  padding-top: 20px;
-}
-.section4 .container .teqsti::after {
-  display: block;
-  content: "";
-  width: 50px;
-  height: 3px;
-  background-color: goldenrod;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-.section4 .container .row .seqcia4 .card {
-  border: 0;
-  margin-bottom: 70px;
-}
-.section4 .container .row .seqcia4 .card .cardtext h2 {
-  margin-top: 20px;
-  text-transform: capitalize;
-  color: #616060;
-  font-size: 27px;
-}
-.section4 .container .row .seqcia4 .card .cardtext h5 {
-  color: grey;
-  margin-bottom: 20px;
-}
-.section4 .container .row .seqcia4 .card .cardtext p {
-  color: grey;
-}
-.section4 .container .row .seqcia4 .card .cardtext a {
+.second .container .col-8 a {
+  margin-top: 51px;
+  font-size: 18px;
+  font-family: openBold;
   display: inline-block;
   text-decoration: none;
-  color: grey;
-  font-size: 17px;
+  color: white;
+  font-weight: 700;
+  background-color: #25365d;
+  padding: 12px 58px 15px 64px;
+  border-radius: 28px;
+}
+.second .container .col-4 {
+  position: absolute;
+  top: 70px;
+  left: 524px;
 }
 
-.section5 {
-  background-color: #252e4b;
-  padding-bottom: 35px;
+section {
+  margin-top: 143px;
+  background-color: #f7f9fb;
 }
-.section5 .container h1 {
-  padding-top: 90px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
+section .container .gare {
+  padding-bottom: 110px;
+  padding-top: 137px;
 }
-.section5 .container p {
-  padding-top: 10px;
-  color: white;
-  text-align: center;
-  font-size: 20px;
+section .container .gare .p-50px {
+  padding-top: 50px;
 }
-.section5 .container p::after {
-  display: block;
-  content: "";
-  width: 50px;
-  height: 3px;
-  background-color: white;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
+section .container .gare .col-4 .shida .col-3 {
+  padding-top: 6px;
 }
-.section5 .container .saregistracio {
-  display: flex;
-  flex-wrap: wrap;
+section .container .gare .col-4 .shida .poto {
+  padding-top: 7px;
+  padding-left: 31px;
+}
+section .container .gare .col-4 .shida .faili {
+  padding-top: 7px;
+  padding-left: 27px;
+}
+section .container .gare .col-4 .shida .telefoni {
+  padding-top: 7px;
+  padding-left: 23px;
+}
+section .container .gare .col-4 .shida .telefonitext {
+  padding-left: 0;
+}
+section .container .gare .col-4 .shida .joxi {
+  padding-top: 7px;
+  padding-left: 32px;
+}
+section .container .gare .col-4 .shida .bolo {
+  padding-top: 6px;
+  padding-left: 24px;
+}
+section .container .gare .col-4 .shida .col-9 {
   align-items: center;
+  padding-left: 8px;
 }
-.section5 .container .saregistracio .info {
-  padding-bottom: 120px;
-  width: 50%;
+section .container .gare .col-4 .shida .col-9 h1 {
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #25365d;
+  font-weight: 600;
+  font-family: openReg;
 }
-.section5 .container .saregistracio .info h3 {
-  color: white;
-  font-size: 20px;
-}
-.section5 .container .saregistracio .info .location {
-  padding-left: 35px;
-}
-.section5 .container .saregistracio .info span {
-  display: block;
-}
-.section5 .container .saregistracio .info .envelope {
-  padding-top: 20px;
-}
-.section5 .container .saregistracio .info .phone {
-  padding-top: 20px;
-}
-.section5 .container .saregistracio .info svg {
-  color: goldenrod;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
-.section5 .container .saregistracio .info .telefoni {
-  position: relative;
-  top: 35px;
-}
-.section5 .container .saregistracio .loginmxare {
-  width: 50%;
-}
-.section5 .container .saregistracio .loginmxare .row #saxeli {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid goldenrod;
-  padding: 5px 0 5px 10px;
-}
-.section5 .container .saregistracio .loginmxare .row #mail {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid goldenrod;
-  padding: 5px 0 5px 10px;
-}
-.section5 .container .saregistracio .loginmxare .row #subject {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid goldenrod;
-  margin-top: 20px;
-  padding: 5px 0 5px 10px;
-}
-.section5 .container .saregistracio .loginmxare .row #diditexti {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid goldenrod;
-  margin-top: 20px;
-  padding-left: 10px;
-  padding-bottom: 80px;
-}
-.section5 .container .saregistracio .loginmxare .row button {
-  margin-top: 15px;
-  border-radius: 20px;
-  padding: 5px 30px;
-  background: transparent;
-  border: 1px solid goldenrod;
-  color: goldenrod;
+section .container .gare .col-4 .shida .col-9 p {
+  padding-top: 6px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #5a5a5a;
+  font-weight: 400;
+  font-family: openReg;
 }
 
-footer .container {
-  text-align: center;
-  font-size: 20px;
-  color: grey;
-}
-footer .container h3 {
-  display: block;
-  font-family: font;
-  font-size: 20px;
-}
-footer .container .zeda {
-  padding-top: 20px;
-}
-footer .container .qveda {
-  padding-bottom: 20px;
-}
-footer .container span {
-  color: goldenrod;
-}
-
-@media (max-width: 580px) {
-  header .container nav {
-    padding: 20px 0;
-    border-bottom: 2px solid goldenrod;
-  }
-  header .container nav ul {
-    display: none;
-  }
-  header .container nav .raime {
-    margin: auto;
-    text-align: center;
-  }
-  header .container .headerbottom {
-    margin-top: 30px;
-  }
-  header .container .headerbottom button {
-    margin: 0;
-    transform: translateX(0);
-  }
-
-  .container .sectionstart .row .upper {
-    width: 100%;
-  }
-
-  .section1 .container .sectionmid .row .midder {
-    width: 100%;
-  }
-  .section1 .container .sectionmid .row .midder .card {
-    text-align: center;
-  }
-
-  .section2 .container .row .gallery {
-    width: 100%;
-    padding: 10px 40px;
-  }
-
-  .section4 .container .row .seqcia4 {
-    width: 100%;
-  }
-
-  .section5 .container .saregistracio .info {
-    width: 100%;
-    text-align: center;
-  }
-  .section5 .container .saregistracio .info .telefoni {
-    right: 80px;
-  }
-  .section5 .container .saregistracio .loginmxare {
-    width: 100%;
-  }
-  .section5 .container .saregistracio .loginmxare .row .push {
-    text-align: center;
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1139px;
   }
 }
 
