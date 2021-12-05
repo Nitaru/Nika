@@ -420,7 +420,7 @@ section .container .gare .col-lg-4 .shida .col-9 p {
   background-image: url("../images/Layer 1.svg");
 }
 .last .container .row {
-  padding-bottom: 669px;
+  padding-bottom: 68%;
 }
 .last .container .row .col-12 {
   text-align: center;
