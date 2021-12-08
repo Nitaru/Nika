@@ -133,8 +133,6 @@ header{
         background-repeat: no-repeat;
         background-position-x: 100%;
         background-position-y: 80%;
-        padding-left: 0;
-        padding-right: 0;
         .col-xl-7{
             position: relative;
            h1{
@@ -719,6 +717,15 @@ section{
     }
 }
 @media (max-width:530px){
+    header{
+        .container{
+            .home{
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
     .fourth{
         .container{
             .row{

@@ -106,8 +106,6 @@ header .home .download a {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 80%;
-  padding-left: 0;
-  padding-right: 0;
 }
 .second .container .col-xl-7 {
   position: relative;
@@ -595,6 +593,10 @@ section .container .gare .col-lg-4 .shida .col-9 p {
   }
 }
 @media (max-width: 530px) {
+  header .container .home h1 {
+    font-size: 50px;
+  }
+
   .fourth .container .row {
     background-image: none;
   }
