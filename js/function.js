@@ -1,29 +1,47 @@
-let ricxvi = 23;
+let stringi = "es aris chemi pirveli stringi"
 
-let kidericxvi = 34;
+let chamatebuli = "chamatebuli sityva"
 
-let jami = ricxvi + kidericxvi;
+console.log(stringi.slice(3, 8))
 
-let gamosatani = "daachiret aq"
+let modzebna = stringi.search("chemi")
 
-let swori = true;
+console.log(modzebna)
 
-let araswori = false;
+console.log(stringi.includes("pirveli"))
 
-let amoucnobi = undefined;
+console.log(stringi.replace("pirveli", "meore"))
 
-let masivi = [34 , "ricxvi" , "gamarjoba"];
+console.log(stringi.startsWith("es"))
 
-let obieqti = {
-    sisqe = 33, peri  = "44", wona = "87kg",
-    mitana = ["tbilisi", "qutaisi", "zugdidi"]
-};
+console.log(stringi.toUpperCase())
 
-// let punqcia = function (){
-// };
+console.log(stringi.trim())
 
-console.log(typeof(araswori))
-   
-console.log(amoucnobi, jami , swori, ricxvi)
+console.log("es aris chemi " + chamatebuli + " pirveli stringi")
 
-document.getElementById("useme").innerHTML = gamosatani;
+console.log(stringi.split(" "))
+
+let year = 2;
+
+let axalistringi = `me vswavlob front end web programirebas ${year} wlis ganmavlobashi`
+
+console.log(axalistringi)
+
+let poto = "images/layer 1.svg"
+
+let linki = "https://mystat.itstep.org/en/main/market/page/index"
+
+let card = `
+<div class="col-lg-4 pt-2">
+<div class="card pe-0 ps-0" style="width: 18rem; border: 1px solid whitesmoke">
+<img src="${poto}" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Card title</h5>
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <a href="${linki}" target="_blank" class="btn btn-danger">Go somewhere</a>
+</div>
+</div>
+</div>
+`
+document.getElementById("inner").innerHTML = card
