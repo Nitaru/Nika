@@ -60,18 +60,27 @@
 
 // document.getElementById("ubra").innerHTML = pasuxi;
 
-let information = {
-  wona: 30,
-  raodenoba: 20,
-  pasi: 15,
-  maragi: function(){
-    if (this.raodenoba == 0) {
-      return `<span class="bg-danger">maragi amoiwura<span>`;
-    }
-    else {
-      return this.raodenoba;
-  }
-}
-}
+// let user = {
+//     saxeli: "admin",
+//     mail: "adminivar@gmail.com",
+//     teleponi: "559-33-43-43",
+//     statusi: 1,
+//     raodenoba: function(){
+//         if (this.statusi !== 1) {
+//             return false
+//         }
+//         return true
+//     },
 
-console.log(information.maragi)
+// };
+
+// let key = Object.keys(user)
+// let val = Object.values(user)
+// let yvela = Object.entries(user)
+
+// console.log(key)
+// console.log(val)
+// console.log(yvela)
+
+// user.mail = "sxvamail"
+// console.log(user.mail)
