@@ -1,0 +1,98 @@
+body{
+    background-color: #272727;
+   
+}
+
+.row{
+    width: 100%;
+}
+
+.menu-btn{
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger{
+    width: 50px;
+    height: 6px;
+    background: rgb(160, 59, 28);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: rgb(160, 59, 28);
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+        transform: translateY(16px);
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background:rgb(160, 59, 28);
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+        transform: translateY(-16px);
+    }
+}
+
+.menu-btn.open .menu-btn__burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger{
+    &::before{
+       transform: rotate(45deg) translate(35px ,-35px); 
+    }
+}
+
+.menu-btn.open .menu-btn__burger{
+    &::after{
+        transform: rotate(-45deg) translate(35px , 35px);
+    }
+}
+
+.pirveli{
+    margin-left: auto;
+}
+
+.col-lg-10{
+    background-color: rgb(160, 59, 28);
+    .dashboard{
+         ul{
+        padding: 50px;
+        li{
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            a{
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                color: white;
+                text-transform: uppercase;
+                padding-top: 5px;
+                transition: all 1s;
+                font-size: 25px;
+            }
+
+        }
+    }
+    }
+   
+}
