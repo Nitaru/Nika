@@ -1,63 +1,52 @@
-// let nika = [154, 3474, 96758, 234, 21, 57, 26,]
+// ========== drop and aside bar JS =================
 
-// nika.sort(function chemisortireba(a,b) {
-//     return b - a
-// })
-// let aso = nika.find( el => {
-//    return el < 150
-// });
+// let drop = document.querySelector('.drop')
+// let asidee = document.querySelector('aside')
 
-// console.log(aso)
-
-// let ghilakebi = document.querySelectorAll(".btn");
-
-// let gasuptaveba = document.querySelector("#reset");
-
-// gasuptaveba.addEventListener('click', function () {
-//     document.getElementById("salamaleiku").innerText = " "
+// drop.addEventListener("click", function(){
+//     this.classList.toggle('showed')
+//     asidee.classList.toggle('showed')
 // })
 
-// ghilakebi.forEach(el =>{
-//     el.addEventListener('click', function () {
-//         document.getElementById('salamaleiku').innerText += this.innerText
+
+// let dasacheri = document.querySelector('.togli')
+
+// let grapa = document.querySelector('.saweri')
+
+// dasacheri.addEventListener("click", function (){
+//     grapa.setAttribute('type', 'password')
+// })
+
+// ==================== btns JS ==================
+
+// let backdiv = document.querySelector('.btn-colors')
+// document.querySelectorAll('.btnrounded').forEach(els=>{
+//     els.addEventListener('click', function () {
+//         let color = this.style.backgroundColor
+//         backdiv.style.transition = "all .6s"
+//         backdiv.style.backgroundColor = color
 //     })
 // })
 
-// let input = document.querySelector("#chemikaisimon")
-// let patara = document.querySelector(".akak")
 
-// input.addEventListener("keyup" , function () {
-//     let values = this.value;
-//     patara.removeAttribute("class")
-//     if (values.length > 0 && values.length < 11) {
-//         patara.innerText = "საჭიროა მინიმუმ 10 სიმბოლო"
-//         patara.classList.add("text-warning")
-//     }else if(values.length == ' '){
-//         patara.innerText = "ველის შევსება სავალდებულოა"
-//         patara.classList.add("text-danger")
+// ============= password JS =====================
+
+// let togg = document.querySelector('#basic-addon1')
+// let togg2 = document.querySelector('#aka')
+// let tvali = document.querySelector('.bi')
+
+
+// togg.addEventListener('click' , function (){
+//     if (tvali.classList[1] == 'bi-eye-slash-fill') {
+//         tvali.style.color = 'blue'
+//         tvali.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
 //     }else{
-//         patara.innerText = "კარგია"
-//         patara.classList.add("text-white" , "bg-success")
+//         tvali.style.color = "grey"
+//         tvali.classList.replace('bi-eye-fill', 'bi-eye-slash-fill')
+//     }
+//     if (togg2.type == 'password') {
+//         togg2.type = 'text';
+//     }else {
+//         togg2.type = 'password'
 //     }
 // })
-
-// ============= საშინაო =================
-let menu = document.querySelector(".menu-btn");
-let menuop = false;
-menu.addEventListener('click', function () {
-    if (!menuop) {
-        menu.classList.add('open');
-        menuop = true;
-    }else{
-        menu.classList.remove('open')
-        menuop = false;
-    }
-});
-
-let gaxsna = document.querySelector('modal')
-
-let content = document.querySelector('dash')
-
-gaxsna.addEventListener('click', function () {
-    content.classList.add("appear")
-})

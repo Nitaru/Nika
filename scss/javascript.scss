@@ -1,98 +1,115 @@
-body{
-    background-color: #272727;
-   
-}
+// ========== drop and aside bar CSS =============
 
-.row{
-    width: 100%;
-}
+// body{
+//     background-color: #2d3142;
+//     overflow-x: hidden;
+// }
 
-.menu-btn{
-    padding-top: 20px;
-    position: relative;
-    display: flex;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-}
+// .drop.showed{
+//     right: 400px;
+// }
 
-.menu-btn__burger{
-    width: 50px;
-    height: 6px;
-    background: rgb(160, 59, 28);
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
+// .drop.showed{
+//     span{
+//         &:nth-child(1){
+//             opacity: 1;
+//             position: relative;
+//             top: 15px;
+//             transform: rotate(45deg);
+//         }
+//         &:nth-child(2){
+//           opacity: 0;
+//         }
+//         &:nth-child(3){        
+//             opacity: 1;
+//             position: relative;
+//             bottom: 15px;
+//             transform: rotate(-45deg);
+//         }
+//     }
+// }
 
-    &::after{
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 6px;
-        background: rgb(160, 59, 28);
-        border-radius: 5px;
-        box-shadow: 0px 2px 5px rgba(255, 101, 47, .2);
-        transition: all .5s ease-in-out;
-        transform: translateY(16px);
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 6px;
-        background:rgb(160, 59, 28);
-        border-radius: 5px;
-        box-shadow: 0px 2px 5px rgba(255, 101, 47, .2);
-        transition: all .5s ease-in-out;
-        transform: translateY(-16px);
-    }
-}
+// .drop{
+//     right: 0;
+//     width: 80px;
+//     height: 80px;
+//     position: absolute;
+//     margin-right: 50px;
+//     margin-top: 37px;
+//     transition: all .8s;
 
-.menu-btn.open .menu-btn__burger{
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
+//     &:hover{
+//         cursor: pointer;
+//     }
+//     span{
+//         transition: all .8s;
+//         display: block;
+//         margin-bottom: 8px;
+//         height: 7px;
+//         width: 80%;
+//         background-color: #ef8354;
+//     }
+// }
+// aside{
+//     background-color: #ef8354;
+//     height: 100vh;
+//     width: 400px;
+//     position: fixed;
+//     right: 0;
+//     padding: 80px;
+//     text-align: center;
+//     transform: translateX(100%);
+//     transition: all .8s;
 
-.menu-btn.open .menu-btn__burger{
-    &::before{
-       transform: rotate(45deg) translate(35px ,-35px); 
-    }
-}
+//     a{
+//             display: block;
+//             text-decoration: none;
+//             color: white;
+//             padding: 25px;
+//             text-transform: uppercase;
+//             font-size: 20px;            
+//     }
+// }
 
-.menu-btn.open .menu-btn__burger{
-    &::after{
-        transform: rotate(-45deg) translate(35px , 35px);
-    }
-}
+// aside.showed{
+//     transform: translateX(0);
+// }
 
-.pirveli{
-    margin-left: auto;
-}
+// ========== btns CSS =================
 
-.col-lg-10{
-    background-color: rgb(160, 59, 28);
-    .dashboard{
-         ul{
-        padding: 50px;
-        li{
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            a{
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                color: white;
-                text-transform: uppercase;
-                padding-top: 5px;
-                transition: all 1s;
-                font-size: 25px;
-            }
+// .btn-colors{
+//     width: 1100px;
+//     margin: auto;
+//     text-align: center;
+//     display: flex;
+//     justify-content: space-around;
+//     margin-top: 100px;
+//     background-color: whitesmoke;
+//     height: 300px;
+//     align-items: center;
+//     button{
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50px;
+//     border: 0;
+//     box-shadow: 2px 2px 5px black;
+//     }
+// }
 
-        }
-    }
-    }
-   
-}
+// .pas{
+//     div{
+//         margin-top: 100px;
+//         #aka{
+//             background-color: transparent;
+//             border: 0;
+//             border-bottom: 1px solid grey;
+//             border-radius: 0;
+//         }
+//         span{
+//             background-color: transparent;
+//             border: 0;
+//             position: relative;
+//             left: 450px;
+//         }
+//     }
+// }
