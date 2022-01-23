@@ -1,3 +1,36 @@
-
+.container .row .col-lg-8 .row .col-lg-5 .card1 {
+  position: relative;
+  text-align: center;
+}
+.container .row .col-lg-8 .row .col-lg-5 .card1 h2 {
+  text-align: center;
+  padding-top: 80px;
+}
+.container .row .col-lg-8 .row .col-lg-5 .card1 p {
+  padding-top: 20px;
+  color: grey;
+}
+.container .row .col-lg-8 .row .col-lg-5 .card1 button {
+  border: 0;
+  background-color: #460080;
+  padding: 7px 50px;
+  border-radius: 20px;
+  color: white;
+}
+.container .row .col-lg-8 .row .col-lg-7 .card2.changed2 {
+  right: 300px;
+}
+.container .row .col-lg-8 .row .col-lg-7 .card2 {
+  position: relative;
+  text-align: center;
+  padding: 20px 80px;
+}
+.container .row .col-lg-8 .row .col-lg-7 .card2 button {
+  border: 0;
+  background-color: #460080;
+  padding: 7px 50px;
+  border-radius: 20px;
+  color: white;
+}
 
 /*# sourceMappingURL=javascript.css.map */
