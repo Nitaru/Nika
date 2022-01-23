@@ -1,115 +1,64 @@
-// ========== drop and aside bar CSS =============
-
-// body{
-//     background-color: #2d3142;
-//     overflow-x: hidden;
-// }
-
-// .drop.showed{
-//     right: 400px;
-// }
-
-// .drop.showed{
-//     span{
-//         &:nth-child(1){
-//             opacity: 1;
-//             position: relative;
-//             top: 15px;
-//             transform: rotate(45deg);
-//         }
-//         &:nth-child(2){
-//           opacity: 0;
-//         }
-//         &:nth-child(3){        
-//             opacity: 1;
-//             position: relative;
-//             bottom: 15px;
-//             transform: rotate(-45deg);
-//         }
-//     }
-// }
-
-// .drop{
-//     right: 0;
-//     width: 80px;
-//     height: 80px;
-//     position: absolute;
-//     margin-right: 50px;
-//     margin-top: 37px;
-//     transition: all .8s;
-
-//     &:hover{
-//         cursor: pointer;
-//     }
-//     span{
-//         transition: all .8s;
-//         display: block;
-//         margin-bottom: 8px;
-//         height: 7px;
-//         width: 80%;
-//         background-color: #ef8354;
-//     }
-// }
-// aside{
-//     background-color: #ef8354;
-//     height: 100vh;
-//     width: 400px;
-//     position: fixed;
-//     right: 0;
-//     padding: 80px;
-//     text-align: center;
-//     transform: translateX(100%);
-//     transition: all .8s;
-
-//     a{
-//             display: block;
-//             text-decoration: none;
-//             color: white;
-//             padding: 25px;
-//             text-transform: uppercase;
-//             font-size: 20px;            
-//     }
-// }
-
-// aside.showed{
-//     transform: translateX(0);
-// }
-
-// ========== btns CSS =================
-
-// .btn-colors{
-//     width: 1100px;
-//     margin: auto;
-//     text-align: center;
-//     display: flex;
-//     justify-content: space-around;
-//     margin-top: 100px;
+// .mytab{
+//     display: none;
 //     background-color: whitesmoke;
-//     height: 300px;
-//     align-items: center;
-//     button{
-//     width: 40px;
-//     height: 40px;
-//     border-radius: 50px;
-//     border: 0;
-//     box-shadow: 2px 2px 5px black;
-//     }
 // }
 
-// .pas{
-//     div{
-//         margin-top: 100px;
-//         #aka{
-//             background-color: transparent;
-//             border: 0;
-//             border-bottom: 1px solid grey;
-//             border-radius: 0;
-//         }
-//         span{
-//             background-color: transparent;
-//             border: 0;
-//             position: relative;
-//             left: 450px;
-//         }
-//     }
+// .mytab.active{
+//     display: block;
 // }
+
+// .btn.active{
+//     background: transparent;
+// }
+
+
+.container{
+    .row{
+        .col-lg-8{
+            .row{
+                .col-lg-5{
+                    // .card1.changed{
+                    //     position: relative;
+                    //     left: 370px;
+                    // }
+                    .card1{
+                        position: relative;
+                        text-align: center;
+                        h2{
+                            text-align: center;
+                            padding-top: 80px;
+                        }
+                        p{
+                            padding-top: 20px;
+                            color: grey;
+                        }
+                        button{
+                            border: 0;
+                            background-color: rgb(70, 0, 128);
+                            padding: 7px 50px;
+                            border-radius: 20px;
+                            color: white;
+                        }
+                    }
+                }
+                .col-lg-7{
+                    .card2.changed2{
+                        right: 300px;
+                    }
+                    .card2{
+                        position: relative;
+                        text-align: center;
+                        padding: 20px 80px;
+                        button{
+                            border: 0;
+                            background-color: rgb(70, 0, 128);
+                            padding: 7px 50px;
+                            border-radius: 20px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
