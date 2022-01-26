@@ -1,64 +1,18 @@
-// .mytab{
-//     display: none;
-//     background-color: whitesmoke;
-// }
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
 
-// .mytab.active{
-//     display: block;
-// }
-
-// .btn.active{
-//     background: transparent;
-// }
+body{
+   height: 100vh;
+}
 
 
-.container{
-    .row{
-        .col-lg-8{
-            .row{
-                .col-lg-5{
-                    // .card1.changed{
-                    //     position: relative;
-                    //     left: 370px;
-                    // }
-                    .card1{
-                        position: relative;
-                        text-align: center;
-                        h2{
-                            text-align: center;
-                            padding-top: 80px;
-                        }
-                        p{
-                            padding-top: 20px;
-                            color: grey;
-                        }
-                        button{
-                            border: 0;
-                            background-color: rgb(70, 0, 128);
-                            padding: 7px 50px;
-                            border-radius: 20px;
-                            color: white;
-                        }
-                    }
-                }
-                .col-lg-7{
-                    .card2.changed2{
-                        right: 300px;
-                    }
-                    .card2{
-                        position: relative;
-                        text-align: center;
-                        padding: 20px 80px;
-                        button{
-                            border: 0;
-                            background-color: rgb(70, 0, 128);
-                            padding: 7px 50px;
-                            border-radius: 20px;
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-    }
+*{
+    font-family: "ArchyEDT-Bold", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.ansrow p{
+    cursor: pointer;
 }

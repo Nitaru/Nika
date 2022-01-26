@@ -1,36 +1,18 @@
-.container .row .col-lg-8 .row .col-lg-5 .card1 {
-  position: relative;
-  text-align: center;
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+body {
+  height: 100vh;
 }
-.container .row .col-lg-8 .row .col-lg-5 .card1 h2 {
-  text-align: center;
-  padding-top: 80px;
+
+* {
+  font-family: "ArchyEDT-Bold", sans-serif;
 }
-.container .row .col-lg-8 .row .col-lg-5 .card1 p {
-  padding-top: 20px;
-  color: grey;
+
+img {
+  width: 100%;
 }
-.container .row .col-lg-8 .row .col-lg-5 .card1 button {
-  border: 0;
-  background-color: #460080;
-  padding: 7px 50px;
-  border-radius: 20px;
-  color: white;
-}
-.container .row .col-lg-8 .row .col-lg-7 .card2.changed2 {
-  right: 300px;
-}
-.container .row .col-lg-8 .row .col-lg-7 .card2 {
-  position: relative;
-  text-align: center;
-  padding: 20px 80px;
-}
-.container .row .col-lg-8 .row .col-lg-7 .card2 button {
-  border: 0;
-  background-color: #460080;
-  padding: 7px 50px;
-  border-radius: 20px;
-  color: white;
+
+.ansrow p {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=javascript.css.map */
