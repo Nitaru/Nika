@@ -1,0 +1,22 @@
+body {
+  background-color: #0f0f0f;
+}
+
+.container {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  margin-top: 250px;
+}
+.container h1 {
+  color: white;
+  display: none;
+}
+.container button {
+  background-color: green;
+  border-radius: 25px;
+  padding: 12px 25px;
+  border: 0;
+}
+
+/*# sourceMappingURL=jquery.css.map */

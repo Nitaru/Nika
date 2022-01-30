@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+.container{
+    margin: auto;
+    width: 500px;
+    text-align: center;
+    margin-top: 250px;
+    h1{
+        color: white;
+        display: none;
+    }
+    button{
+        background-color: green;
+        border-radius: 25px;
+        padding: 12px 25px;
+        border: 0;
+    }
+}
