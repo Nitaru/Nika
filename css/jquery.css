@@ -1,22 +1,127 @@
-body {
-  background-color: #0f0f0f;
+.left {
+  position: relative;
+}
+.left::before {
+  position: absolute;
+  right: 231px;
+  top: 41px;
+  content: "";
+  display: inline-block;
+  width: 180px;
+  height: 3px;
+  background-color: #e74c3c;
 }
 
-.container {
-  margin: auto;
-  width: 500px;
-  text-align: center;
-  margin-top: 250px;
+.middle {
+  position: relative;
 }
-.container h1 {
-  color: white;
+.middle::before {
+  opacity: 0;
+  position: absolute;
+  right: 231px;
+  top: 41px;
+  content: "";
+  display: inline-block;
+  width: 298px;
+  height: 3px;
+  background-color: #e74c3c;
+}
+
+.active2::before {
+  opacity: 1;
+}
+
+.right {
+  position: relative;
+}
+.right::before {
+  opacity: 0;
+  position: absolute;
+  right: 231px;
+  top: 41px;
+  content: "";
+  display: inline-block;
+  width: 298px;
+  height: 3px;
+  background-color: #e74c3c;
+}
+.right::after {
+  opacity: 0;
+  left: 230px;
+  bottom: 75px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 180px;
+  height: 3px;
+  background-color: #e74c3c;
+}
+
+.active3::before {
+  opacity: 1;
+}
+.active3::after {
+  opacity: 1;
+}
+
+.steps h5 {
+  color: #cdcddc;
+  font-weight: normal;
+}
+.steps .colored {
+  color: #e74c3c;
+}
+.steps div {
+  color: #cdcddc;
+  padding: 25px 35px;
+  border: 3px solid #e74c3c;
+  border-radius: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+.steps div i {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.steps.active div {
+  color: #ffffff;
+  background-color: #e74c3c;
+  padding: 25px 35px;
+  border: 2px solid #e74c3c;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.forpar {
   display: none;
 }
-.container button {
-  background-color: green;
-  border-radius: 25px;
-  padding: 12px 25px;
-  border: 0;
+
+.forpar.active {
+  text-align: center;
+  display: block;
+}
+
+#stepsec .row .col-lg-12 #github {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#stepsec .btn-danger1 {
+  position: absolute;
+  background-color: #e74c3c;
+  padding: 7px 55px;
+  color: white;
+  top: 300px;
+  left: 40px;
+}
+#stepsec .btn-danger2 {
+  position: absolute;
+  background-color: #e74c3c;
+  padding: 7px 55px;
+  color: white;
+  top: 300px;
+  right: 40px;
 }
 
 /*# sourceMappingURL=jquery.css.map */
